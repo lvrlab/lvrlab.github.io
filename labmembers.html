@@ -9,15 +9,17 @@
 </head>
 <body>
 
-<header>
-    <h1>LVR Lab</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="research.html">Research Areas</a>
-        <a href="publications.html">Publications</a>
-        <a href="labmembers.html">Lab Members</a>
-    </nav>
-</header>
+<!-- Load header from header.html -->
+<div id="header-container"></div>
+
+<script>
+    // Load the header from header.html
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+</script>
 
 <section class="content">
     <h2>Lab Members</h2>
@@ -25,7 +27,6 @@
         <li>Dr. John Doe - Principal Investigator</li>
         <li>Jane Smith - PhD Student</li>
         <li>Mike Johnson - Researcher</li>
-        <!-- Add more lab members as needed -->
     </ul>
 </section>
 
