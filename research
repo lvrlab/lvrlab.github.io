@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research Areas of LVR Lab">
+    <title>Research Areas - LVR Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>LVR Lab</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research Areas</a>
+        <a href="publications.html">Publications</a>
+        <a href="labmembers.html">Lab Members</a>
+    </nav>
+</header>
+
+<section class="content">
+    <h2>Research Areas</h2>
+    <ul>
+        <li>Computer Vision and Perception</li>
+        <li>Robotics and Autonomous Systems</li>
+        <li>Machine Learning and AI for Robotics</li>
+        <li>Human-Robot Interaction</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 LVR Lab. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
