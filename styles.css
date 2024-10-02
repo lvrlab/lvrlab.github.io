@@ -100,7 +100,8 @@ section.content {
 }
 
 .large-text {
-    font-size: 24px; /* 원하는 크기로 설정 */
+    font-size: 20px; /* 원하는 크기로 설정 */
+    color: blue;
 }
 
 /* Footer Styles */
