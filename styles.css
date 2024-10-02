@@ -56,6 +56,47 @@ section.content {
     background-color: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start; /* Align image and text properly */
+}
+
+.content-item img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    border: 1px solid #ccc;
+    display: none; /* Default: Hide the image if no source is provided */
+}
+
+.content-item img[src] {
+    display: block; /* Display image only when src attribute is present */
+}
+
+.content-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-info p {
+    margin: 5px 0;
+}
+
+.content-info a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.content-info a:hover {
+    text-decoration: underline;
 }
 
 /* Footer Styles */
@@ -89,5 +130,14 @@ footer {
 
     #header-container p {
         font-size: 16px;
+    }
+
+    .content-item {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+    }
+
+    .content-item img {
+        width: 100%; /* Make image full-width on small screens */
+        height: auto;
     }
 }
