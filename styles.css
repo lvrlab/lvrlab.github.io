@@ -40,13 +40,12 @@ body.loaded {
     margin: 0 15px;
     font-weight: bold;
     padding: 8px 15px;
-    background-color: #00509e; /* Slightly lighter blue for buttons */
     border-radius: 5px;
     display: inline-block;
 }
 
 #header-container nav a:hover {
-    background-color: #002244; /* Darker blue on hover */
+    background-color: #00509e; /* Darker blue on hover */
 }
 
 .container {
