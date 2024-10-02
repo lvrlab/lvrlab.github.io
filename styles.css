@@ -104,6 +104,9 @@ section.content {
     font-size: 20px; /* 원하는 크기로 설정 */
     color: blue;
 }
+.mid-text {
+    font-size: 12px; /* 원하는 크기로 설정 */
+}
 
 /* Footer Styles */
 footer {
