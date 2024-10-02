@@ -34,7 +34,8 @@ body {
     margin: 0 15px;
     font-weight: bold;
     padding: 8px 15px;
-    background-color: #00509e; /* Slightly lighter blue for buttons */
+    /* background-color: #00509e; Slightly lighter blue for buttons */
+    background-color: #002244; /* Darker blue on hover */
     border-radius: 5px;
     display: inline-block;
 }
