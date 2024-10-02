@@ -5,22 +5,39 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
-    background-color: #003366;
+#header-container {
+    background-color: #003366; /* Dark Blue */
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
-header nav a {
+#header-container h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+#header-container p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#header-container nav {
+    margin-top: 15px;
+}
+
+#header-container nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    padding: 8px 15px;
+    background-color: #00509e; /* Slightly lighter blue for buttons */
+    border-radius: 5px;
 }
 
-header nav a:hover {
-    text-decoration: underline;
+#header-container nav a:hover {
+    background-color: #002244; /* Darker blue on hover */
 }
 
 section.content {
@@ -32,7 +49,7 @@ section.content {
 }
 
 footer {
-    background-color: #333;
+    background-color: #002244; /* Darker Blue */
     color: white;
     text-align: center;
     padding: 10px;
