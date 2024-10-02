@@ -49,6 +49,13 @@ body.loaded {
     background-color: #002244; /* Darker blue on hover */
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* Content Section */
 section.content {
     max-width: 1200px;
@@ -59,15 +66,6 @@ section.content {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.content h2 {
-    background-color: #e0e0e0; /* Gray background */
-    color: #333;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .content-item {
