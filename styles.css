@@ -147,20 +147,22 @@ section.content {
     margin: 5px 0;
     color: #666;
 }
-.member a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.member a:hover {
-    text-decoration: underline;
-}
 
 .member-info {
     display: flex;
     flex-direction: column;
     text-align: left; /* Left-align by default */            
 }
+
+.member-info a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.member-info a:hover {
+    text-decoration: underline;
+}
+
 
 /* Footer Styles */
 footer {
