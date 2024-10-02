@@ -23,26 +23,26 @@
         }
         .lab-members {
             display: flex;
-            flex-direction: column; /* Stack elements vertically */
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
         .member {
             background-color: #fff;
             border: 1px solid #ccc;
             border-radius: 8px;
             padding: 20px;
-            margin: 10px 0; /* Add vertical spacing between members */
+            margin: 10px;
+            flex: 1 1 300px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
-            flex-direction: column; /* Stack image and info vertically */
             align-items: center;
-            text-align: center;
         }
         .member img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 15px;
+            margin-right: 20px; /* Adds space between the image and text */
         }
         .member h3 {
             font-size: 24px;
@@ -55,28 +55,35 @@
             color: #666;
         }
         .member-info ul {
-            list-style-type: disc;
+            list-style-type: disc; /* Default bullet style */
             margin: 0;
-            padding-left: 0;
+            padding-left: 20px; /* Indentation for bullets */
         }
+    
         .member-info li {
-            font-size: 18px;
-            margin-bottom: 5px;
-            color: #666;
-            text-align: left;
+            font-size: 18px; /* Same size as your paragraphs */
+            margin-bottom: 5px; /* To control spacing between list items */
+            color: #666; /* Same text color as your paragraphs */
         }
+        
         .member-info {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
-            text-align: left;
+            text-align: left; /* Left-align by default */            
         }
+
         @media (max-width: 768px) {
             .member {
-                text-align: left;
-                align-items: flex-start;
+                flex-direction: column; /* Stack image and text vertically on small screens */
+                text-align: center;
             }
+            .member img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            .member-info {
+            text-align: left; /* Left-align by default */            
+        }
         }
     </style>
 </head>
@@ -120,6 +127,7 @@
         <!-- Add more members as needed -->
     </div>
 </div>
+
 
 <footer>
     <p>&copy; 2024 LVR Lab. All Rights Reserved.</p>
