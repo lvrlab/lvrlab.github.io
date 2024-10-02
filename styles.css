@@ -132,7 +132,7 @@ section.content {
 }
 .member img {
     width: 100px;
-    height: 100px;
+    height: auto;
     border-radius: 0;
     object-fit: contain;
     margin-right: 20px; /* Adds space between the image and text */
