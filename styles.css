@@ -99,6 +99,10 @@ section.content {
     text-decoration: underline;
 }
 
+.large-text {
+    font-size: 24px; /* 원하는 크기로 설정 */
+}
+
 /* Footer Styles */
 footer {
     background-color: #002244; /* Darker Blue */
