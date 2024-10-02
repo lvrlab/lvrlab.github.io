@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     opacity: 0;  /* Initially hidden */
-    transition: opacity 0.5s ease-in-out; /* Fade-in transition */
+    transition: opacity 0.1s ease-in-out; /* Fade-in transition */
 }
 
 body.loaded {
