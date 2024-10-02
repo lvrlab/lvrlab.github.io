@@ -69,7 +69,9 @@
         .member-info {
             display: flex;
             flex-direction: column;
+            text-align: left; /* Left-align by default */            
         }
+
         @media (max-width: 768px) {
             .member {
                 flex-direction: column; /* Stack image and text vertically on small screens */
@@ -79,6 +81,9 @@
                 margin-right: 0;
                 margin-bottom: 15px;
             }
+            .member-info {
+            text-align: left; /* Left-align by default */            
+        }
         }
     </style>
 </head>
