@@ -7,7 +7,7 @@
     <title>Lab Members - LVR Lab</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="figures/Antu_firestorm_icon.svg.png" type="image/png">
-       <style>
+    <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -34,27 +34,38 @@
             margin: 10px;
             flex: 1 1 300px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .member h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #333;
+            display: flex;
+            align-items: center;
         }
         .member img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 15px;
+            margin-right: 20px; /* Adds space between the image and text */
+        }
+        .member h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
         }
         .member p {
             font-size: 18px;
             margin-bottom: 10px;
             color: #666;
         }
+        .member-info {
+            display: flex;
+            flex-direction: column;
+        }
         @media (max-width: 768px) {
             .member {
-                flex: 1 1 100%;
+                flex-direction: column; /* Stack image and text vertically on small screens */
+                text-align: center;
+            }
+            .member img {
+                margin-right: 0;
+                margin-bottom: 15px;
             }
         }
     </style>
@@ -77,15 +88,20 @@
     <h1>Lab Members</h1>
     <div class="lab-members">
         <div class="member">
-            <img src="images/jane-doe.jpg" alt="Dr. Jane Doe">
-            <h3><a href="https://byungokhan.github.io" target="_blank">ByungOk Han</a></h3>
-            <p>Position: Associate Professor</p>
-            <p>Research Interests: Robotics, Computer Vision, Machine Learning</p>
+            <img src="images/jane-doe.jpg" alt="Dr. Han">
+            <div class="member-info">
+                <h3><a href="https://byungokhan.github.io" target="_blank">ByungOk Han</a></h3>
+                <p>Position: Associate Professor</p>
+                <p>Research Interests: Robotics, Computer Vision, Machine Learning</p>
+            </div>
         </div>
         <div class="member">
-            <h3><a href="https://sites.google.com/site/yochin47/" target="_blank">Woo-han Yun</a></h3>
-            <p>Position: Assistant Professor</p>
-            <p>Research Interests: Computer Vision, Machine Learning, Robotics</p>
+            <img src="images/jane-doe.jpg" alt="Dr. Yun">
+            <div class="member-info">
+                <h3><a href="https://sites.google.com/site/yochin47/" target="_blank">Woo-han Yun</a></h3>
+                <p>Position: Assistant Professor</p>
+                <p>Research Interests: Computer Vision, Machine Learning, Robotics</p>
+            </div>
         </div>
         <!-- Add more members as needed -->
     </div>
