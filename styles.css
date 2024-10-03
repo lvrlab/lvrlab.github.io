@@ -232,9 +232,9 @@ footer {
 
     #header-container nav a {
         display: block;
-        margin: 10px 0;
+        margin: 0;
         width: auto;
-        padding: 10px 5px;
+        padding: 0;
     }
 
     #header-container h1 {
