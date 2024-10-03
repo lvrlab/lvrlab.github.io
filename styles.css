@@ -201,24 +201,17 @@ footer {
     font-size: 28px;
     cursor: pointer;
     color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px; /* 왼쪽 상단에 배치 */
 }
 
 /* Responsive Menu for Smaller Screens */
 @media (max-width: 768px) {
-/*     .menu-toggle {
+    .menu-toggle {
         display: block; /* 햄버거 메뉴 표시 */
         margin: 10px 0;
         text-align: center;
-    } */
-    .menu-toggle {
-        display: none; /* 데스크탑에서 숨김 */
-        background: none;
-        border: none;
-        font-size: 28px;
-        color: white;
-        position: absolute;
-        top: 20px;
-        left: 20px; /* 왼쪽 상단에 배치 */
     }
 
     #header-container nav {
