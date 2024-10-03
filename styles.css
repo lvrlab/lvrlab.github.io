@@ -206,7 +206,7 @@ footer {
     top: 10px;
     left: 10px; /* 왼쪽 상단에 배치 */
 }
-}
+
 
 /* Responsive Menu for Smaller Screens */
 @media (max-width: 768px) {
