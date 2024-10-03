@@ -15,7 +15,7 @@ body.loaded {
 #header-container {
     background-color: #003366; /* Dark Blue */
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 20px 0px;
     position: relative
 }
