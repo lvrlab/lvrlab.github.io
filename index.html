@@ -20,7 +20,7 @@
 <body>
 
 <!-- Header will be loaded here -->
-<div id="header-container"></div>
+<!-- <div id="header-container"></div>
 
 <script>
     // Load the header from header.html
@@ -29,7 +29,36 @@
         .then(data => {
             document.getElementById('header-container').innerHTML = data;
         });
+</script> -->
+
+<!-- Header will be loaded here -->
+<div id="header-container"></div>
+
+<script>
+    // Load the header from header.html
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+            
+            // 햄버거 메뉴 토글 기능을 header.html 로드 후에 적용
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('#header-container nav');
+            
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');  // 햄버거 아이콘의 상태를 변경
+                    if (navMenu.style.display === 'block') {
+                        navMenu.style.display = 'none';  // 메뉴가 열려있다면 숨기기
+                    } else {
+                        navMenu.style.display = 'block';  // 메뉴가 닫혀있다면 열기
+                    }
+                });
+            }
+        })
+        .catch(error => console.error('Error loading header:', error));
 </script>
+
 
 
 <div class="container">
