@@ -198,12 +198,12 @@ footer {
     display: none;
     background: none;
     border: none;
-    font-size: 40px;
+    font-size: 50px;
     cursor: pointer;
     color: white;
     position: absolute;
-    top: 10px;
-    left: 10px; /* 왼쪽 상단에 배치 */
+    top: 0px;
+    left: 0px; /* 왼쪽 상단에 배치 */
 }
 
 /* Responsive Menu for Smaller Screens */
