@@ -96,12 +96,12 @@ section.content {
     margin: 5px 0;
     
 }
-.content a {
+.container .content a {
     color: #0066cc;
     text-decoration: none;
 }
 
-.content a:hover {
+.container .content a:hover {
     text-decoration: underline;
 }
 
