@@ -205,6 +205,7 @@ footer {
     position: absolute;
     top: 0px;
     left: 0px; /* 왼쪽 상단에 배치 */
+    z-index: 1000; 
     
 }
 
