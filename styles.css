@@ -48,6 +48,15 @@ body.loaded {
     background-color: #00509e; /* Darker blue on hover */
 }
 
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
