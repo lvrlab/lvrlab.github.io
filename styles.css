@@ -193,10 +193,30 @@ footer {
     width: 100%;
 }
 
+/* 햄버거 메뉴 추가 */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
 /* Responsive Menu for Smaller Screens */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* 햄버거 메뉴 표시 */
+        margin: 10px 0;
+        text-align: center;
+    }
+
     #header-container nav {
-        display: block;
+        display: none; /* 기본적으로 네비게이션 숨기기 */
+    }
+
+    .menu-toggle.active + nav {
+        display: block; /* 햄버거 메뉴가 활성화되면 네비게이션 표시 */
         text-align: center;
     }
 
