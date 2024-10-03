@@ -262,6 +262,6 @@ footer {
         margin-bottom: 15px;
     }
     .member-info {
-    text-align: left; /* Left-align by default */            
-}
+        text-align: left; /* Left-align by default */            
+    }
 }
