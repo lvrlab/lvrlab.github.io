@@ -212,6 +212,8 @@ footer {
         display: block; /* 햄버거 메뉴 표시 */
         margin: 10px 0;
         text-align: center;
+        top: 0px;
+        left: 0px; /* 왼쪽 상단에 배치 */
     }
 
     #header-container nav {
