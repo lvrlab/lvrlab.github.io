@@ -96,6 +96,15 @@ section.content {
     margin: 5px 0;
     
 }
+.content a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
 
 .content-info a {
     color: #0066cc;
