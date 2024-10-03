@@ -215,7 +215,7 @@ footer {
         margin: 10px 0;
         text-align: center;
         top: 0px;
-        left: 0px;   /* 다른 모든 규칙보다 우선적으로 적용됨 */ /* 왼쪽 상단에 배치 */
+        left: 0px !important;   /* 다른 모든 규칙보다 우선적으로 적용됨 */ /* 왼쪽 상단에 배치 */
     }
 
     #header-container nav {
