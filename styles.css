@@ -16,7 +16,7 @@ body.loaded {
     background-color: #003366; /* Dark Blue */
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 5px;
 }
 
 #header-container h1 {
