@@ -203,8 +203,8 @@ footer {
     cursor: pointer;
     color: white;
     position: absolute;
-    top: 10px;
-    left: 10px; /* 왼쪽 상단에 배치 */
+    top: 0px;
+    left: 0px; /* 왼쪽 상단에 배치 */
 }
 
 
@@ -214,8 +214,8 @@ footer {
         display: block; /* 햄버거 메뉴 표시 */
         margin: 10px 0;
         text-align: center;
-        top: 10px;
-        left: 10px;   /* 다른 모든 규칙보다 우선적으로 적용됨 */ /* 왼쪽 상단에 배치 */
+        top: 0px;
+        left: 0px;   /* 다른 모든 규칙보다 우선적으로 적용됨 */ /* 왼쪽 상단에 배치 */
     }
 
     #header-container nav {
