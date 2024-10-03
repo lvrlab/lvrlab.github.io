@@ -17,7 +17,8 @@ body.loaded {
     color: white;
     text-align: center;
     padding: 20px 0px;
-    position: relative
+    position: relative;
+    width: 100%;
 }
 
 #header-container h1 {
