@@ -204,7 +204,8 @@ footer {
     color: white;
     position: absolute;
     top: 0px;
-    left: 0px; /* 왼쪽 상단에 배치 */
+    left: 0px; /* 왼쪽 상단에 배치 */ !important; /* 다른 모든 규칙보다 우선적으로 적용됨 */
+}
 }
 
 /* Responsive Menu for Smaller Screens */
