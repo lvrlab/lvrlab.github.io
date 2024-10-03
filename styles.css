@@ -231,7 +231,7 @@ footer {
     }
 
     #header-container nav a {
-        display: block;
+        display: inline-block;
         margin: 10px 0;
         width: auto;
         padding: 10px 5px;
