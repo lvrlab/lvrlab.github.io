@@ -210,6 +210,41 @@ footer {
     
 }
 
+/* Publications Section */
+.publications {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.publication {
+    display: flex;
+    gap: 20px;
+}
+
+.publication img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    border: 1px solid #ccc;
+}
+
+.pub-info {
+    flex: 1;
+}
+
+.pub-info p {
+    margin: 5px 0;
+}
+
+.pub-info a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.pub-info a:hover {
+    text-decoration: underline;
+}
 
 /* Responsive Menu for Smaller Screens */
 @media (max-width: 768px) {
