@@ -263,4 +263,18 @@ footer {
     .member-info {
         text-align: left; /* Left-align by default */            
     }
+    
+    .publication {
+        flex-direction: column;
+        align-items: left;
+    }
+    
+    .publication img {
+        max-width: 300px;
+        height: auto;
+    }
+    .pub-info {
+        text-align: left;
+    }
+}
 }
