@@ -248,40 +248,49 @@ footer {
     text-decoration: underline;
 }
 
-/* Responsive Menu for Smaller Screens */
 @media (max-width: 768px) {
-    
     .menu-toggle {
-        display: block; /* 햄버거 메뉴 표시 */
-        top: 0;
-        left: 0; /* 왼쪽 상단에 배치 */
-        z-index: 1000; /* 다른 요소 위로 오도록 설정 */
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 20px; /* 헤더의 좌측 패딩과 동일하게 설정 */
+        z-index: 1000;
+        background: none;
+        border: none;
+        font-size: 36px;
+        cursor: pointer;
+        color: white;
+        padding: 0;
+        margin: 0;
     }
 
     #header-container {
         width: 100%;
-        margin: 0; /* 수평 마진 제거 */
-        padding: 15px 0; /* 필요에 따라 조정 */
+        margin: 0;
+        padding: 15px 20px; /* 좌우 패딩 20px 추가 */
+        box-sizing: border-box;
+    }
+
+    #header-container h1 {
+        font-size: 28px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #header-container p {
+        font-size: 16px;
+        margin: 0;
+        padding: 10px 0 0 0;
     }
 
     #header-container nav {
-        display: none; /* 기본적으로 네비게이션 숨기기 */
-    }
-
-    section.content {
-        width: 100%;
-        max-width: 100%;
-        padding: 10px 20px;
-    }
-
-    .container {
-        width: 100%;
-        max-width: 100%;
-        padding: 10px 20px; /* 필요에 따라 조정 */
+        display: none;
+        margin: 0;
+        padding: 0;
     }
 
     .menu-toggle.active + nav {
-        display: block; /* 햄버거 메뉴가 활성화되면 네비게이션 표시 */
+        display: block;
         text-align: center;
     }
 
@@ -289,50 +298,57 @@ footer {
         display: block;
         margin: 10px 0;
         width: auto;
-        padding: 10px 0;
+        padding: 10px 0; /* 좌우 패딩 제거 */
+        text-align: center;
     }
 
-    #header-container h1 {
-        font-size: 28px;
+    /* 콘텐츠 영역 */
+    .container,
+    section.content {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px 20px;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
-
-    #header-container p {
-        font-size: 16px;
-    }
-
 
     .content-item {
-        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        flex-direction: column;
     }
 
     .content-item img {
-        width: 100%; /* Make image full-width on small screens */
+        width: 100%;
         max-width: 100%;
         height: auto;
     }
+
     .member {
-        flex-direction: column; /* Stack image and text vertically on small screens */
+        flex-direction: column;
         text-align: center;
     }
+
     .member img {
         margin-right: 0;
         margin-bottom: 15px;
     }
+
     .member-info {
-        text-align: left; /* Left-align by default */            
+        text-align: left;
     }
-    
+
     .publication {
         flex-direction: column;
-        align-items: left;
+        align-items: flex-start;
     }
-    
+
     .publication img {
         max-width: 300px;
         height: auto;
     }
+
     .pub-info {
         text-align: left;
     }
 }
+
 }
