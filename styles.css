@@ -204,7 +204,7 @@ footer {
     cursor: pointer;
     color: white;
     position: absolute;
-    padding: 0;      /* 패딩 제거 */
+    padding: 5;      /* 패딩 제거 */
     margin: 0;       /* 마진 제거 */
     top: 0;
     left: 0; /* 왼쪽 상단에 배치 */
