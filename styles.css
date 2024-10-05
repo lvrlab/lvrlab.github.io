@@ -13,6 +13,7 @@ body.loaded {
 
 /* Header Styles */
 #header-container {
+    box-sizing: border-box;
     background-color: #003366; /* Dark Blue */
     color: white;
     text-align: center;
