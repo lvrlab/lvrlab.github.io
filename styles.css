@@ -301,6 +301,7 @@ footer {
 
     .content-item img {
         width: 100%; /* Make image full-width on small screens */
+        max-width: 100%;
         height: auto;
     }
     .member {
