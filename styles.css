@@ -17,7 +17,7 @@ body.loaded {
     color: white;
     text-align: center;
     position: relative;
-    margin: 0 auto; /* 수평 중앙 정렬 */
+    margin: 0; /* 수평 중앙 정렬 */
     padding: 20px 0px;
     width: 100%;
 }
