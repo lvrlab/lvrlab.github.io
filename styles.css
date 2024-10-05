@@ -203,7 +203,6 @@ footer {
     font-size: 36px;
     cursor: pointer;
     color: white;
-    position: absolute;
     top: 0;
     left: 0; /* 왼쪽 상단에 배치 */
     z-index: 1000; 
@@ -248,10 +247,6 @@ footer {
 
 /* Responsive Menu for Smaller Screens */
 @media (max-width: 768px) {
-    
-    #header-container {
-        position: relative; /* 추가: 헤더를 위치 기준으로 설정 */
-    }
     
     .menu-toggle {
         display: block; /* 햄버거 메뉴 표시 */
