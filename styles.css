@@ -20,6 +20,9 @@ body.loaded {
     position: relative;
     width: 100%;
 }
+#header {
+    position: relative;
+}
 
 #header-container h1 {
     margin: 0;
