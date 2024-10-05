@@ -259,7 +259,7 @@ footer {
     }
 
     #header-container {
-        width: 100%;
+        width: 100vw;
         margin: 0; /* 수평 마진 제거 */
         padding: 15px 0; /* 필요에 따라 조정 */
     }
