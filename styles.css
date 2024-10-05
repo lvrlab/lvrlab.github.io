@@ -16,6 +16,7 @@ body.loaded {
     background-color: #003366; /* Dark Blue */
     color: white;
     text-align: center;
+    position: relative;
     padding: 20px 0px;
     width: 100%;
 }
