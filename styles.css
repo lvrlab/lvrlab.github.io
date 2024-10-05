@@ -203,6 +203,7 @@ footer {
     font-size: 36px;
     cursor: pointer;
     color: white;
+    position: absolute;
     top: 0;
     left: 0; /* 왼쪽 상단에 배치 */
     z-index: 1000; 
