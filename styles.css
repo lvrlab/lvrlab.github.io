@@ -258,7 +258,7 @@ footer {
     .menu-toggle {
         display: block; /* 햄버거 메뉴 표시 */
         top: 0;
-        left: 5; /* 왼쪽 상단에 배치 */
+        left: 10; /* 왼쪽 상단에 배치 */
         z-index: 1000; /* 다른 요소 위로 오도록 설정 */
     }
 
