@@ -280,6 +280,12 @@ footer {
         font-size: 16px;
     }
 
+    .container {
+        width: 100%;
+        padding: 10px; /* 필요에 따라 조정 */
+        margin: 0 auto; /* 중앙 정렬 유지 */
+    }
+
     .content-item {
         flex-direction: column; /* Stack image and text vertically on smaller screens */
     }
