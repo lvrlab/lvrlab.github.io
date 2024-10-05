@@ -290,6 +290,7 @@ footer {
 
     .container {
         width: 100%;
+        max-width: 100%;
         padding: 10px; /* 필요에 따라 조정 */
         margin: 0 auto; /* 중앙 정렬 유지 */
     }
