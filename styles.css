@@ -20,9 +20,6 @@ body.loaded {
     position: relative;
     width: 100%;
 }
-#header {
-    position: relative;
-}
 
 #header-container h1 {
     margin: 0;
@@ -256,6 +253,9 @@ footer {
         top: 0;
         left: 0; /* 왼쪽 상단에 배치 */
         z-index: 1000; /* 다른 요소 위로 오도록 설정 */
+    }
+    #header {
+        position: relative; /* 추가: 헤더를 위치 기준으로 설정 */
     }
 
     #header-container nav {
