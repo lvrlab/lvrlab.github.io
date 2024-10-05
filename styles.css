@@ -344,6 +344,7 @@ footer {
     .publication img {
         max-width: 300px;
         height: auto;
+        margin: 0 auto;    /* 이미지 중앙 정렬 */
     }
 
     .pub-info {
