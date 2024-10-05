@@ -254,7 +254,7 @@ footer {
         left: 0; /* 왼쪽 상단에 배치 */
         z-index: 1000; /* 다른 요소 위로 오도록 설정 */
     }
-    #header {
+    #header-container {
         position: relative; /* 추가: 헤더를 위치 기준으로 설정 */
     }
 
