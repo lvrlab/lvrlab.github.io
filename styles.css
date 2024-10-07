@@ -327,7 +327,7 @@ footer {
         text-align: center;
     }
     .member-info h3 img {
-        margin-left: 5px; /* 텍스트와 아이콘 사이의 간격 */
+        margin-left: 0px; /* 텍스트와 아이콘 사이의 간격 */
         vertical-align: middle; /* 아이콘을 텍스트의 중간에 맞추기 */
     }
 
