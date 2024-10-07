@@ -54,7 +54,7 @@ body.loaded {
 
 a {
     color: #0066cc;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
@@ -111,7 +111,7 @@ section.content {
 }
 .container .content a {
     color: #0066cc;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .container .content a:hover {
@@ -121,7 +121,7 @@ section.content {
 
 .content-info a {
     color: #0066cc;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .content-info a:hover {
@@ -178,7 +178,7 @@ section.content {
 
 .member-info a {
     color: #0066cc;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .member-info a:hover {
@@ -241,7 +241,7 @@ footer {
 
 .pub-info a {
     color: #0066cc;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .pub-info a:hover {
