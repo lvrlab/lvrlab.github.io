@@ -203,7 +203,8 @@ section.content {
 }
 
 .pub-info p {
-    margin: 5px 0;
+    margin: 8px 0;     /* 위아래 간격 살짝 추가 */
+    line-height: 1.8;  /* 줄 간격 시원하게 변경 */
 }
 
 /* --- Footer --- */
