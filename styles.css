@@ -1,102 +1,276 @@
-/* --- 1. 기본 뼈대 (깔끔한 화이트톤) --- */
+/* --- Global Styles --- */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.7; /* 전체적으로 줄 간격을 넓게 설정 */
-    color: #333;
-    background-color: #fff;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    opacity: 0;  /* Initially hidden for fade-in effect */
+    transition: opacity 0.1s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;  /* Fade in once the page has loaded */
+}
+
+a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .container {
-    max-width: 900px; /* 모든 페이지의 가독성 확보 */
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 20px;
 }
 
-/* --- 2. 헤더 & 메뉴 (나머지 탭 이동을 위해 필요) --- */
-header {
+/* --- Header & Navigation --- */
+#header-container {
+    box-sizing: border-box;
+    background-color: #003366; /* Dark Blue */
+    color: white;
     text-align: center;
-    padding: 60px 0 30px 0;
-    border-bottom: 1px solid #eee;
+    position: relative;
+    margin: 0;
+    padding: 20px 0px;
+    width: 100%;
 }
 
-nav {
-    margin-top: 20px;
+#header-container h1 {
+    margin: 0;
+    font-size: 36px;
 }
 
-nav a {
-    margin: 0 15px;
-    color: #555;
+#header-container p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#header-container nav {
+    margin-top: 15px;
+}
+
+#header-container nav a {
+    color: white;
     text-decoration: none;
-    font-weight: 500;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
-nav a:hover {
-    color: #0066cc;
+#header-container nav a:hover {
+    background-color: #00509e;
 }
 
-/* --- 3. 섹션 공통 (About, Research 등 모든 탭 적용) --- */
-section {
-    margin-top: 40px;
-    margin-bottom: 60px;
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
 }
 
-section h2 {
-    font-size: 24px;
-    border-left: 4px solid #003366; /* 제목 옆에 포인트를 주어 깔끔하게 */
-    padding-left: 15px;
-    margin-bottom: 25px;
-    color: #111;
-}
-
-/* --- 4. Publications 탭 전용 --- */
-.publication {
+/* --- Content Section (General) --- */
+section.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    gap: 25px;
-    margin-bottom: 35px;
-    align-items: flex-start;
-}
-
-.publication img {
-    width: 180px;
-    border: 1px solid #eee;
-    flex-shrink: 0;
-}
-
-.pub-info p {
-    margin: 0 0 10px 0;
-    line-height: 1.8; /* 논문 탭 줄 간격 강조 */
-}
-
-/* --- 5. Members 탭 전용 (그리드 스타일) --- */
-.lab-members {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    flex-direction: column;
     gap: 20px;
 }
 
+.content-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.content-item img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+.content-item img[src] {
+    display: block;
+}
+
+.content-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-info p {
+    margin: 5px 0;
+}
+
+.large-text {
+    font-size: 20px;
+    color: blue;
+}
+
+.mid-text {
+    font-size: 15px;
+}
+
+/* --- Lab Members Section --- */
+.lab-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .member {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     padding: 20px;
-    border: 1px solid #eee;
-    text-align: center;
+    margin: 20px;
+    flex: 1 1 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; 
 }
 
 .member img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%; /* 멤버 사진은 원형이 깔끔합니다 */
-    object-fit: cover;
-    margin-bottom: 15px;
+    width: 100px;
+    height: auto;
+    border-radius: 0;
+    object-fit: contain;
+    margin-right: 20px;
+    flex-shrink: 0;
 }
 
-/* --- 6. 모바일 대응 --- */
+.member-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.member h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.member p {
+    font-size: 17px;
+    margin: 2px 0;
+    color: #666;
+}
+
+/* --- Publications Section --- */
+.publications {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.publication {
+    display: flex;
+    gap: 20px;
+    align-items: center; 
+}
+
+.publication img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    border: 1px solid #ccc;
+    flex-shrink: 0;
+}
+
+.pub-info {
+    flex: 1;
+}
+
+.pub-info p {
+    margin: 5px 0;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #002244;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* --- Mobile Responsive (Max-width: 768px) --- */
 @media (max-width: 768px) {
-    .publication {
-        flex-direction: column;
+    .menu-toggle {
+        display: block;
+        top: 15px;
+        left: 20px;
     }
-    .publication img {
+
+    #header-container {
+        padding: 15px 20px;
+    }
+
+    #header-container h1 {
+        font-size: 28px;
+    }
+
+    #header-container nav {
+        display: none;
+    }
+
+    .menu-toggle.active + nav {
+        display: block;
+        text-align: center;
+    }
+
+    #header-container nav a {
+        display: block;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    .container, section.content {
         width: 100%;
-        max-width: 250px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    .content-item, .publication, .member {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .publication img {
+        max-width: 300px;
+        margin: 0 auto 15px auto;
+    }
+
+    .member img {
+        margin-right: 0;
+        margin-bottom: 15px;
+        align-self: center;
+    }
+
+    .member-info, .pub-info {
+        text-align: left;
     }
 }
