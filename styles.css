@@ -260,6 +260,14 @@ footer {
         align-items: flex-start;
     }
 
+    .content-item img {
+        width: 100%;       /* 너비를 부모 요소에 맞춤 */
+        max-width: 300px;  /* 하지만 너무 커지지 않게 제한 */
+        height: auto;      /* 비율 유지 */
+        display: block;
+        margin: 0 auto 15px auto; /* 중앙 정렬 및 아래 간격 */
+    }
+    
     .publication img {
         max-width: 300px;
         margin: 0 auto 15px auto;
